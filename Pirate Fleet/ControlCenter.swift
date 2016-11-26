@@ -22,6 +22,7 @@ class ControlCenter {
     
     func addShipsAndMines(_ human: Human) {
         // Write your code here!
+        let mediumShip1 = Ship(length: 3, location: GridLo, isVertical: <#T##Bool#>)
     }
     
     func calculateFinalScore(_ gameStats: GameStats) -> Int {
