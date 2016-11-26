@@ -53,11 +53,11 @@ class ControlCenter {
     func calculateFinalScore(_ gameStats: GameStats) -> Int {
         
         var finalScore: Int
-        let requiredShips = 5
+        let totalRequiredShips = 5
         
         finalScore = 0
         
-        let enemyShipsSunk = requiredShips - gameStats.enemyShipsRemaining
+        let enemyShipsSunk = totalRequiredShips - gameStats.enemyShipsRemaining
         let sinkBonus = gameStats.sinkBonus
         let humanShipsRemaining = gameStats.humanShipsSunk
         let shipBonus = gameStats.shipBonus
