@@ -18,10 +18,15 @@ struct Ship {
     let isVertical: Bool
 }
 
+struct Mine: _Mine_ {
+    var location: GridLocation
+    var explosionText: String
+}
+
 class ControlCenter {
     
     func addShipsAndMines(_ human: Human) {
-        // Write your code here!
+        // Adding some ships
         let smallShip = Ship(length: 2, location: GridLocation(x: 0, y: 0), isVertical: false)
         human.addShipToGrid(smallShip)
         
@@ -36,13 +41,30 @@ class ControlCenter {
         
         let extraLargeShip = Ship(length: 5, location: GridLocation(x: 0, y: 4), isVertical: false)
         human.addShipToGrid(extraLargeShip)
+        
+        //Adding some mines
+        let mine1 = Mine(location: GridLocation(x: 5, y: 0), explosionText: "mine1 explode!")
+        human.addMineToGrid(mine1)
+        
+        let mine2 = Mine(location: GridLocation(x: 5, y: 2), explosionText: "mine2 explode!")
+        human.addMineToGrid(mine2)
     }
     
     func calculateFinalScore(_ gameStats: GameStats) -> Int {
         
         var finalScore: Int
+        let requiredShips = 5
         
-        finalScore = 0                
+        finalScore = 0
+        
+        let enemyShipsSunk = requiredShips - gameStats.enemyShipsRemaining
+        let sinkBonus = gameStats.sinkBonus
+        let humanShipsRemaining = gameStats.humanShipsSunk
+        let shipBonus = gameStats.shipBonus
+        let numberOfGuesses = gameStats.numberOfHitsOnEnemy + gameStats.numberOfMissesByHuman
+        let guessPenalty = gameStats.guessPenalty
+        
+        finalScore = (enemyShipsSunk * sinkBonus) + (humanShipsRemaining * shipBonus) - (numberOfGuesses * guessPenalty)
         
         return finalScore
     }
