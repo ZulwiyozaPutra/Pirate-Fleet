@@ -22,7 +22,14 @@ class ControlCenter {
     
     func addShipsAndMines(_ human: Human) {
         // Write your code here!
-        let mediumShip1 = Ship(length: 3, location: GridLo, isVertical: <#T##Bool#>)
+        let mediumShip1 = Ship(length: 3, location: GridLocation(x: 0, y: 0), isVertical: false)
+        human.addShipToGrid(mediumShip1)
+        
+        let mediumShip2 = Ship(length: 3, location: GridLocation(x: 0, y: 1), isVertical: false)
+        human.addShipToGrid(mediumShip2)
+        
+        let largeShip = Ship(length: 5, location: GridLocation(x: 0, y: 2), isVertical: false)
+        human.addShipToGrid(largeShip)
     }
     
     func calculateFinalScore(_ gameStats: GameStats) -> Int {
