@@ -3,6 +3,10 @@
 //  Pirate Fleet
 //
 //  Created by Jarrod Parkes on 8/14/15.
+<<<<<<< HEAD
+=======
+//  Modified by Zulwiyoza Putra on 11/25/16.
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 //  Copyright © 2015 Udacity, Inc. All rights reserved.
 //
 
@@ -39,6 +43,7 @@ class PirateFleetViewController: UIViewController {
     func initializeGame() {
         
         // initialize human player first
+<<<<<<< HEAD
         let penaltyItems = setupHuman()
         
         // computer must match the number of penalty items added by human
@@ -46,6 +51,15 @@ class PirateFleetViewController: UIViewController {
         
         // determine if the proper amount of ships/mines/monsters given
         let readyState = checkReadyToPlay(penaltyItems.0, numberOfSeamonsters: penaltyItems.1)
+=======
+        let numberOfMines = setupHuman()
+        
+        // computer must match the number of penalty items added by human
+        setupComputer(numberOfMines)
+        
+        // determine if the proper amount of ships/mines given
+        let readyState = checkReadyToPlay(numberOfMines)
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         
         // are we ready to play?
         switch(readyState) {
@@ -53,6 +67,7 @@ class PirateFleetViewController: UIViewController {
             readyToPlay = true
             gameOver = false
         case .ShipsMinesNotReady:
+<<<<<<< HEAD
             stopGameForErrorWithState(readyState, error: Settings.Messages.ShipsMinesNotReady)
         case .ShipsNotReady:
             stopGameForErrorWithState(readyState, error: Settings.Messages.ShipsNotReady)
@@ -60,12 +75,24 @@ class PirateFleetViewController: UIViewController {
             stopGameForErrorWithState(readyState, error: Settings.Messages.ShipsMonstersNotReady)
         case .ShipsMinesMonstersNotReady:
             stopGameForErrorWithState(readyState, error: Settings.Messages.ShipsMinesMonstersNotReady)
+=======
+            readyToPlay = false
+            gameOver = true
+            print(Settings.Messages.ShipsMinesNotReady)
+            createAlertWithTitle(Settings.Messages.UnableToStartTitle, message: readyState.rawValue, completionHandler: nil)
+        case .ShipsNotReady:
+            readyToPlay = false
+            gameOver = true
+            print(Settings.Messages.ShipsNotReady)
+            createAlertWithTitle(Settings.Messages.UnableToStartTitle, message: readyState.rawValue, completionHandler: nil)
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         case .Invalid:
             readyToPlay = false
             gameOver = true
         }
     }
     
+<<<<<<< HEAD
     fileprivate func stopGameForErrorWithState(_ readyState: ReadyState, error: String) {
         readyToPlay = false
         gameOver = true
@@ -90,17 +117,41 @@ class PirateFleetViewController: UIViewController {
         if computer != nil {
             computer.reset()
             computer.addPlayerShipsMinesMonsters(numberOfMines, numberOfSeamonsters: numberOfSeamonsters)
+=======
+    func setupHuman() -> Int {
+        if human != nil {
+            human.reset()
+            human.addPlayerShipsMines()
+        } else {
+            human = HumanObject(frame: CGRect(x: self.view.frame.size.width / 2 - 120, y: self.view.frame.size.height - 256, width: 240, height: 240))
+            human.playerDelegate = self
+            human.addPlayerShipsMines()
+            self.view.addSubview(human.gridView)
+        }
+        return human.numberOfMines()
+    }
+    
+    func setupComputer(_ numberOfMines: Int) {
+        if computer != nil {
+            computer.reset()
+            computer.addPlayerShipsMines(numberOfMines)
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         } else {
             computer = Computer(frame: CGRect(x: self.view.frame.size.width / 2 - 180, y: self.view.frame.size.height / 2 - 300, width: 360, height: 360))
             computer.playerDelegate = self
             computer.gridDelegate = self
+<<<<<<< HEAD
             computer.addPlayerShipsMinesMonsters(numberOfMines, numberOfSeamonsters: numberOfSeamonsters)
+=======
+            computer.addPlayerShipsMines(numberOfMines)
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
             self.view.addSubview(computer.gridView)
         }
     }
     
     // MARK: Check If Ready To Play
 
+<<<<<<< HEAD
     func checkReadyToPlay(_ numberOfMines: Int, numberOfSeamonsters: Int) -> ReadyState {
         switch (numberOfMines, numberOfSeamonsters) {
         case (0, 0):
@@ -111,6 +162,14 @@ class PirateFleetViewController: UIViewController {
             return (human.readyToPlay(checkMonsters: false) && computer.readyToPlay(checkMonsters: false)) ? .ReadyToPlay : .ShipsMinesNotReady
         case (0...2, 0...2):
             return (human.readyToPlay() && computer.readyToPlay()) ? .ReadyToPlay : .ShipsMinesMonstersNotReady
+=======
+    func checkReadyToPlay(_ numberOfMines: Int) -> ReadyState {
+        switch (numberOfMines) {
+        case 0:
+            return (human.readyToPlay(checkMines: false) && computer.readyToPlay(checkMines: false)) ? .ReadyToPlay : .ShipsNotReady
+        case 1...2:
+            return (human.readyToPlay() && computer.readyToPlay()) ? .ReadyToPlay : .ShipsMinesNotReady
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         default:
             return .Invalid
         }
@@ -158,6 +217,7 @@ extension PirateFleetViewController: PlayerDelegate {
         
         // which player was attacked?
         let attackedPlayer = (player.playerType == .human) ? computer : human
+<<<<<<< HEAD
         print("playerDidMove - attackedPlayer is \(attackedPlayer)")
         
         // if any penalties incurred during the move, show alert
@@ -190,6 +250,17 @@ extension PirateFleetViewController: PlayerDelegate {
                     self.dismissPenaltyAlert(player)
                 })
             }
+=======
+        
+        // if any penalties incurred during the move, show alert
+        if let mine = player.lastHitPenaltyCell {            
+            attackedPlayer?.availableMoves.append(.normalMove)
+            
+            let alertMessage = (player.playerType == .human) ? Settings.Messages.HumanHitMine : Settings.Messages.ComputerHitMine
+            createAlertWithTitle(mine.explosionText, message: alertMessage, actionMessage: Settings.Messages.DismissAction, completionHandler: { (action) in
+                self.dismissPenaltyAlert(player)
+            })
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         } else {
             nextMove(player)
         }        

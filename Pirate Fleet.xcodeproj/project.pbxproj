@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A914B9721B94E260005C7E2F /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914B9711B94E260005C7E2F /* Computer.swift */; };
+<<<<<<< HEAD
 		A932F7F01B8E6DE2009E89A9 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7EF1B8E6DE2009E89A9 /* Structs.swift */; };
 		A932F7F21B8E6E29009E89A9 /* Protocols-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7F11B8E6E29009E89A9 /* Protocols-Extensions.swift */; };
 		A932F7F41B8E6EAD009E89A9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7F31B8E6EAD009E89A9 /* Enums.swift */; };
+=======
+		A91A855D1D1AF92000C6B6CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A91A855B1D1AF92000C6B6CC /* LaunchScreen.xib */; };
+		A932F7F01B8E6DE2009E89A9 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7EF1B8E6DE2009E89A9 /* Structs.swift */; };
+		A932F7F21B8E6E29009E89A9 /* Protocols-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7F11B8E6E29009E89A9 /* Protocols-Extensions.swift */; };
+		A932F7F41B8E6EAD009E89A9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A932F7F31B8E6EAD009E89A9 /* Enums.swift */; };
+		A938F02D1BDEEB7A007E4548 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938F02C1BDEEB7A007E4548 /* Protocols.swift */; };
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 		A9601EC51B8E8B8800F9D044 /* MineHit.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9601EC41B8E8B8800F9D044 /* MineHit.pdf */; };
 		A9C2B45C1B8E2D38007983DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C2B45B1B8E2D38007983DB /* AppDelegate.swift */; };
 		A9C2B4611B8E2D38007983DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C2B45F1B8E2D38007983DB /* Main.storyboard */; };
@@ -31,6 +39,7 @@
 		A9C2B4901B8E2D79007983DB /* Water.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A9C2B47E1B8E2D79007983DB /* Water.pdf */; };
 		A9D83B5F1B97881C00EBA850 /* ControlCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D83B5E1B97881C00EBA850 /* ControlCenter.swift */; };
 		A9DDAF261B9629AD00D64CD7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DDAF251B9629AD00D64CD7 /* Functions.swift */; };
+<<<<<<< HEAD
 		A9E8D0ED1D1B07C00063D23B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E8D0EB1D1B07C00063D23B /* LaunchScreen.xib */; };
 		A9EAC0BB1B8FD833008AD77B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAC0BA1B8FD833008AD77B /* Player.swift */; };
 		A9EAC0BD1B8FDE98008AD77B /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAC0BC1B8FDE98008AD77B /* Human.swift */; };
@@ -42,13 +51,25 @@
 		ED986BA11BDFF7960018437D /* WoodenShipHeadLeft.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ED986B9D1BDFF7960018437D /* WoodenShipHeadLeft.pdf */; };
 		ED986BA41BDFFA420018437D /* WoodenShipHeadRightWithFlag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ED986BA21BDFFA420018437D /* WoodenShipHeadRightWithFlag.pdf */; };
 		ED986BA51BDFFA420018437D /* WoodenShipHeadUpWithFlag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ED986BA31BDFFA420018437D /* WoodenShipHeadUpWithFlag.pdf */; };
+=======
+		A9EAC0BB1B8FD833008AD77B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAC0BA1B8FD833008AD77B /* Player.swift */; };
+		A9EAC0BD1B8FDE98008AD77B /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EAC0BC1B8FDE98008AD77B /* Human.swift */; };
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A914B9711B94E260005C7E2F /* Computer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		A932F7EF1B8E6DE2009E89A9 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		A932F7F11B8E6E29009E89A9 /* Protocols-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Protocols-Extensions.swift"; sourceTree = "<group>"; };
 		A932F7F31B8E6EAD009E89A9 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+=======
+		A91A855C1D1AF92000C6B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A932F7EF1B8E6DE2009E89A9 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		A932F7F11B8E6E29009E89A9 /* Protocols-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Protocols-Extensions.swift"; sourceTree = "<group>"; };
+		A932F7F31B8E6EAD009E89A9 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		A938F02C1BDEEB7A007E4548 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 		A9601EC41B8E8B8800F9D044 /* MineHit.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MineHit.pdf; path = Images/MineHit.pdf; sourceTree = "<group>"; };
 		A9C2B4581B8E2D38007983DB /* Pirate Fleet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pirate Fleet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C2B45B1B8E2D38007983DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +92,7 @@
 		A9C2B47E1B8E2D79007983DB /* Water.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Water.pdf; path = Images/Water.pdf; sourceTree = "<group>"; };
 		A9D83B5E1B97881C00EBA850 /* ControlCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenter.swift; sourceTree = "<group>"; };
 		A9DDAF251B9629AD00D64CD7 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		A9E8D0EC1D1B07C00063D23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9EAC0BA1B8FD833008AD77B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A9EAC0BC1B8FDE98008AD77B /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
@@ -82,6 +104,10 @@
 		ED986B9D1BDFF7960018437D /* WoodenShipHeadLeft.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WoodenShipHeadLeft.pdf; sourceTree = "<group>"; };
 		ED986BA21BDFFA420018437D /* WoodenShipHeadRightWithFlag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WoodenShipHeadRightWithFlag.pdf; sourceTree = "<group>"; };
 		ED986BA31BDFFA420018437D /* WoodenShipHeadUpWithFlag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = WoodenShipHeadUpWithFlag.pdf; sourceTree = "<group>"; };
+=======
+		A9EAC0BA1B8FD833008AD77B /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A9EAC0BC1B8FDE98008AD77B /* Human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +171,11 @@
 				A9C2B4621B8E2D38007983DB /* Assets.xcassets */,
 				A9C2B4751B8E2D79007983DB /* Hit.pdf */,
 				A9C2B4761B8E2D79007983DB /* Miss.pdf */,
+<<<<<<< HEAD
 				ED127C9B1BEA9CA300593385 /* SeaMonsterHit.pdf */,
 				ED127C9D1BEA9DC500593385 /* SeaMonster.pdf */,
+=======
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				A9C2B4771B8E2D79007983DB /* ShipEndRight.pdf */,
 				A9C2B4781B8E2D79007983DB /* ShipEndLeft.pdf */,
 				A9C2B4791B8E2D79007983DB /* ShipEndDown.pdf */,
@@ -156,12 +185,15 @@
 				A9601EC41B8E8B8800F9D044 /* MineHit.pdf */,
 				A9C2B47C1B8E2D79007983DB /* Mine.pdf */,
 				A9C2B47E1B8E2D79007983DB /* Water.pdf */,
+<<<<<<< HEAD
 				ED986B9A1BDFF7960018437D /* WoodenShipBodyHorz.pdf */,
 				ED986B9B1BDFF7960018437D /* WoodenShipBodyVert.pdf */,
 				ED986B9C1BDFF7960018437D /* WoodenShipHeadDown.pdf */,
 				ED986B9D1BDFF7960018437D /* WoodenShipHeadLeft.pdf */,
 				ED986BA21BDFFA420018437D /* WoodenShipHeadRightWithFlag.pdf */,
 				ED986BA31BDFFA420018437D /* WoodenShipHeadUpWithFlag.pdf */,
+=======
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -188,7 +220,11 @@
 			isa = PBXGroup;
 			children = (
 				A9C2B45F1B8E2D38007983DB /* Main.storyboard */,
+<<<<<<< HEAD
 				A9E8D0EB1D1B07C00063D23B /* LaunchScreen.xib */,
+=======
+				A91A855B1D1AF92000C6B6CC /* LaunchScreen.xib */,
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -212,6 +248,10 @@
 			children = (
 				A932F7F31B8E6EAD009E89A9 /* Enums.swift */,
 				A9DDAF251B9629AD00D64CD7 /* Functions.swift */,
+<<<<<<< HEAD
+=======
+				A938F02C1BDEEB7A007E4548 /* Protocols.swift */,
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				A932F7F11B8E6E29009E89A9 /* Protocols-Extensions.swift */,
 				A932F7EF1B8E6DE2009E89A9 /* Structs.swift */,
 			);
@@ -244,7 +284,11 @@
 		A9C2B4501B8E2D38007983DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD
 				LastUpgradeCheck = 0800;
+=======
+				LastUpgradeCheck = 0810;
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				ORGANIZATIONNAME = Udacity;
 				TargetAttributes = {
 					A9C2B4571B8E2D38007983DB = {
@@ -276,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				ED127C9E1BEA9DC500593385 /* SeaMonster.pdf in Resources */,
 				ED986B9E1BDFF7960018437D /* WoodenShipBodyHorz.pdf in Resources */,
 				A9C2B4901B8E2D79007983DB /* Water.pdf in Resources */,
@@ -297,6 +342,21 @@
 				A9C2B48C1B8E2D79007983DB /* ShipBodyVert.pdf in Resources */,
 				A9601EC51B8E8B8800F9D044 /* MineHit.pdf in Resources */,
 				A9E8D0ED1D1B07C00063D23B /* LaunchScreen.xib in Resources */,
+=======
+				A9C2B4901B8E2D79007983DB /* Water.pdf in Resources */,
+				A9C2B4631B8E2D38007983DB /* Assets.xcassets in Resources */,
+				A9C2B48E1B8E2D79007983DB /* Mine.pdf in Resources */,
+				A9C2B48B1B8E2D79007983DB /* ShipEndDown.pdf in Resources */,
+				A9C2B48D1B8E2D79007983DB /* ShipBodyHorz.pdf in Resources */,
+				A9C2B48F1B8E2D79007983DB /* ShipEndUp.pdf in Resources */,
+				A9C2B4881B8E2D79007983DB /* Miss.pdf in Resources */,
+				A9C2B48A1B8E2D79007983DB /* ShipEndLeft.pdf in Resources */,
+				A9C2B4891B8E2D79007983DB /* ShipEndRight.pdf in Resources */,
+				A9C2B4871B8E2D79007983DB /* Hit.pdf in Resources */,
+				A91A855D1D1AF92000C6B6CC /* LaunchScreen.xib in Resources */,
+				A9C2B48C1B8E2D79007983DB /* ShipBodyVert.pdf in Resources */,
+				A9601EC51B8E8B8800F9D044 /* MineHit.pdf in Resources */,
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				A9C2B4611B8E2D38007983DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +377,10 @@
 				A9C2B4821B8E2D79007983DB /* GridViewController.swift in Sources */,
 				A9C2B45C1B8E2D38007983DB /* AppDelegate.swift in Sources */,
 				A932F7F01B8E6DE2009E89A9 /* Structs.swift in Sources */,
+<<<<<<< HEAD
+=======
+				A938F02D1BDEEB7A007E4548 /* Protocols.swift in Sources */,
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				A9EAC0BD1B8FDE98008AD77B /* Human.swift in Sources */,
 				A932F7F41B8E6EAD009E89A9 /* Enums.swift in Sources */,
 				A9C2B4831B8E2D79007983DB /* PirateFleetViewController.swift in Sources */,
@@ -327,6 +391,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+<<<<<<< HEAD
 		A9C2B45F1B8E2D38007983DB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +406,22 @@
 				A9E8D0EC1D1B07C00063D23B /* Base */,
 			);
 			name = LaunchScreen.xib;
+=======
+		A91A855B1D1AF92000C6B6CC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91A855C1D1AF92000C6B6CC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A9C2B45F1B8E2D38007983DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C2B4601B8E2D38007983DB /* Base */,
+			);
+			name = Main.storyboard;
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -359,8 +440,15 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+<<<<<<< HEAD
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+=======
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -404,8 +492,15 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+<<<<<<< HEAD
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+=======
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+>>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
