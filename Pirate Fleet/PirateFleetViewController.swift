@@ -163,7 +163,7 @@ extension PirateFleetViewController: PlayerDelegate {
         // if any penalties incurred during the move, show alert
         if let penaltyCell = player.lastHitPenaltyCell {
             
-// TODO:Uncomment once PenaltyCell protocol has been implemented
+            // TODO:Uncomment once PenaltyCell protocol has been implemented
             if penaltyCell.guaranteesHit {
                 attackedPlayer.availableMoves.append(.guaranteedHit)
             } else {
@@ -172,21 +172,23 @@ extension PirateFleetViewController: PlayerDelegate {
 
             
             // mine penalty
-             if let _ = penaltyCell as? Mine {
+             if let mine = penaltyCell as? Mine {
                 
                 let alertMessage = (player.playerType == .human) ? Settings.Messages.HumanHitMine : Settings.Messages.ComputerHitMine
+                
+                let alertTitle = mine.penaltyText
 
-                createAlertWithTitle("Ka-boom!", message: alertMessage, actionMessage: Settings.Messages.DismissAction, completionHandler: { (action) in
+                createAlertWithTitle(alertTitle, message: alertMessage, actionMessage: Settings.Messages.DismissAction, completionHandler: { (action) in
                     self.dismissPenaltyAlert(player)
                 })
             }
                 
             // seamonster penalty
-            else if let _ = penaltyCell as? SeaMonster {
+            else if let seaMonster = penaltyCell as? SeaMonster {
                 
                 let alertMessage = (player.playerType == .human) ? Settings.Messages.HumanHitMonster : Settings.Messages.ComputerHitMonster
                 
-                createAlertWithTitle("You hit a Seamonster!", message: alertMessage, actionMessage: Settings.Messages.DismissAction, completionHandler: { (action) in
+                createAlertWithTitle(seaMonster.penaltyText, message: alertMessage, actionMessage: Settings.Messages.DismissAction, completionHandler: { (action) in
                     self.dismissPenaltyAlert(player)
                 })
             }
