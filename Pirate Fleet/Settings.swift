@@ -3,10 +3,6 @@
 //  Pirate Fleet
 //
 //  Created by Jarrod Parkes on 8/25/15.
-<<<<<<< HEAD
-=======
-//  Modified by Zulwiyoza Putra on 11/25/16.
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 //  Copyright © 2015 Udacity, Inc. All rights reserved.
 //
 
@@ -15,11 +11,8 @@
 enum ReadyState: String {
     case ShipsNotReady = "You do not have the correct amount of ships. Check the Debug Area for more specific details."
     case ShipsMinesNotReady = "You do not have the correct amount of ships/mines. Check the Debug Area for more specific details."
-<<<<<<< HEAD
     case ShipsMonstersNotReady = "You do not have the correct amount of ships/monsters. Check the Debug Area for more specific details."
     case ShipsMinesMonstersNotReady = "You do not have the correct amount of ships/mines/monsters. Check the Debug Area for more specific details."
-=======
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
     case ReadyToPlay = "All Ready!"
     case Invalid = "Invalid Ready State!"
 }
@@ -37,20 +30,15 @@ struct Settings {
         .xLarge: 1
     ]
     static let RequiredMines = 2
-<<<<<<< HEAD
     static let RequiredSeamonsters = 2
     
     static let DefaultMineText = "Boom!"
     static let DefaultMonsterText = "Yikes!"
-=======
-    static let DefaultMineText = "Boom!"
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
     
     struct Messages {
         static let GameOverTitle = "Game Over"
         static let GameOverWin = "You won! Congrats!"
         static let GameOverLose = "You've been defeated by the computer."
-<<<<<<< HEAD
         static let UnableToStartTitle = "Cannot Start Game"
         static let ShipsNotReady = "NOTE: You need one small ship (size 2), two medium ships (size 3), one large ship (size 4), one x-large ship (size 5)."
         static let ShipsMinesNotReady = "NOTE: You need one small ship (size 2), two medium ships (size 3), one large ship (size 4), one x-large ship (size 5), and two mines."
@@ -60,16 +48,6 @@ struct Settings {
         static let ComputerHitMine = "The computer has hit a mine! You've been awarded an extra move on your next turn."
         static let HumanHitMonster = "You've hit a sea monster! RIGHT NOW THE COMPUTER WILL JUST TAKE AN EXTRA TURN..."
         static let ComputerHitMonster = "The computer has hit a sea monster! RIGHT NOW WE'LL JUST SKIP THE COMPUTER'S NEXT TURN..."
-=======
-        
-        static let UnableToStartTitle = "Cannot Start Game"
-        static let ShipsNotReady = "NOTE: You need one small ship (size 2), two medium ships (size 3), one large ship (size 4), one x-large ship (size 5)."
-        static let ShipsMinesNotReady = "NOTE: You need one small ship (size 2), two medium ships (size 3), one large ship (size 4), one x-large ship (size 5), and two mines."
-        
-        static let HumanHitMine = "You've hit a mine! The computer has been rewarded an extra move on their next turn."
-        static let ComputerHitMine = "The computer has hit a mine! You've been awarded an extra move on your next turn."
-        
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         static let ResetAction = "Reset Game"
         static let DismissAction = "Continue"
     }
@@ -78,18 +56,13 @@ struct Settings {
         static let Water = "Water"
         static let Hit = "Hit"
         static let Miss = "Miss"
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         static let ShipEndRight = "ShipEndRight"
         static let ShipEndLeft = "ShipEndLeft"
         static let ShipEndDown = "ShipEndDown"
         static let ShipEndUp = "ShipEndUp"
         static let ShipBodyHorz = "ShipBodyHorz"
         static let ShipBodyVert = "ShipBodyVert"
-<<<<<<< HEAD
 
         static let WoodenShipHeadLeft = "WoodenShipHeadLeft"
         static let WoodenShipHeadRightWithFlag = "WoodenShipHeadRightWithFlag"
@@ -103,12 +76,5 @@ struct Settings {
         
         static let SeaMonster = "SeaMonster"
         static let SeaMonsterHit = "SeaMonsterHit"
-=======
-        
-        static let WoodenShipPlaceholder = "WoodenShipPlaceholder"
-        
-        static let Mine = "Mine"
-        static let MineHit = "MineHit"
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
     }
 }

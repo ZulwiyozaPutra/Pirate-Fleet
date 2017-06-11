@@ -3,10 +3,6 @@
 //  Pirate Fleet
 //
 //  Created by Jarrod Parkes on 8/31/15.
-<<<<<<< HEAD
-=======
-//  Modified by Zulwiyoza Putra on 11/25/16.
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
 //  Copyright © 2015 Udacity. All rights reserved.
 //
 
@@ -56,13 +52,10 @@ class Computer: Player {
             lastHitPenaltyCell = mine
         }
         
-<<<<<<< HEAD
         if let seamonster = player.grid[move.x][move.y].seamonster {
             lastHitPenaltyCell = seamonster
         }
         
-=======
->>>>>>> df6bc0c922ceb4137eb2f8d6fbe7757a7fc21d4f
         if player.gridViewController.fireCannonAtLocation(move) {
             shipHitTrace.append(move)
             if Settings.ComputerDifficulty == .advanced && lastHitPenaltyCell == nil { addEducatedMoves() }
